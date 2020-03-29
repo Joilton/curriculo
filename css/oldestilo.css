@@ -1,0 +1,53 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+body{
+	font-family: arial;
+	background:url(/img/amazonia4.0.jpeg);
+	background-size: 100%;
+
+}
+ul{
+	list-style: none;
+
+}
+img{
+	width: 40px;
+
+}
+input[type="checkbox"]{
+	display: none;
+}
+nav{top: 60px;
+	background-color: rgba(16, 16, 16, .5);
+	width: 350px;
+	height: 100%;
+	left: -350px;
+	position: absolute;
+	transform: translateX(350px);
+	transition: all .5s ;
+}
+input[type="checkbox"]:checked ~ nav
+{
+	transform: translatex(350px);
+}
+
+a{
+	display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+
+label{
+    padding: 15px;
+	position: absolute;
+	z-index: 1;
+	
+}

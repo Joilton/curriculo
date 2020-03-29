@@ -1,0 +1,72 @@
+/*Padronização inicial*/
+
+    *{padding: 0;
+    margin: 0px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+       
+    }
+    li{
+        padding: 10px;
+    }
+    body{
+        font-family: arial;
+        background: url("/img/amazonia4.0.jpeg");
+        
+    }
+  
+    ul{
+        list-style: none;
+    }
+/*----------------------*/
+
+/*Configurar Imagem*/
+img{
+    width: 40px;
+
+}
+
+/*Esconder checkbox*/
+input[type="checkbox"]{
+display: none;
+}
+
+/*configurar intens menu*/
+nav{
+   background-color: rgba(16, 16, 16, .5); 
+   width: 350px;
+   height: 100%;
+   left: -350px;
+   position: absolute;
+   transform:all .5s;
+
+}
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+ul{
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+/*Formatar links*/
+a{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+a:hover{
+    background-color: rgb(176, 224, 230);
+    color: black;
+}
+/*posição*/
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
